@@ -1,0 +1,7 @@
+[project]
+name = "werewolf-server"
+version = "0.1.0"
+description = "The server for werewolf agent game."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
