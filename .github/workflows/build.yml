@@ -51,6 +51,7 @@ jobs:
 
       - run: |
           python -m pip install --upgrade pip
+          pip install pylint
           for req in $(find . -name "requirements.txt"); do
               echo "Installing $req"
               pip install -r $req
