@@ -20,11 +20,11 @@ class Player:
         self.vote_correct_counts : int = 0 # 玩家投票正确的次数
         self.mistake_counts : int = 0 # 玩家失误的次数，如毒杀好人等
 
-    def die(self) -> None :
+    def die(self, method: str) -> None :
         # 将玩家的状态设置为死亡，同时标记死亡后果（如猎人不能开枪）
         self.is_alive = False
-        # 如果猎人死亡，设置为不能开枪
-        if self.role.is_hunter :
+        # 如果猎人被毒杀，设置为不能开枪
+        if self.role.is_hunter and method == "poison":    
             self.can_shoot = False
 
     # 显示玩家信息
