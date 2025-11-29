@@ -17,6 +17,7 @@ Checkout `README.md` in corresponding directories for usage of different compone
 PRs accepted!
 
 For developers, some key points to be followed, especially for ASTA members:
+
 - Make sure your code can pass CI checks, including pylint and black.
 - Comment your code appropriately. For documentation comments in Python, you can refer [this repository](https://github.com/thuasta/saiblo-worker).
 - Don't contain any non-ascii character in your source code, including Chinese, especially in comments and logging messages. If you are using AI-assisted coding, remember to remind it to comment in English.
