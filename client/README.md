@@ -8,6 +8,8 @@ The visualization part of the project. Main features should include:
 
 <!-- TODO: finish -->
 
+---
+
 - UI is functional and was validated locally with `npm run dev`.
 - A local mock game engine (`src/services/mockGameEngine.ts`) simulates `game_state` streaming and handles human actions for demo purposes.
 
