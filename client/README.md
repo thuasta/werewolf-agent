@@ -13,7 +13,7 @@ The visualization part of the project. Main features should include:
 - UI is functional and was validated locally with `npm run dev`.
 - A local mock game engine (`src/services/mockGameEngine.ts`) simulates `game_state` streaming and handles human actions for demo purposes.
 
-- Notes about the mock engine
+Notes about the mock engine
 - `src/services/mockGameEngine.ts` is a front-end mock used for local demos. It exposes:
   - `subscribeToGame(callback)` — subscribe to game state updates
   - `startGameLoop()` — start the demo loop
