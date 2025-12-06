@@ -1,7 +1,10 @@
 """Tests for game configuration."""
 
-from game_logic.game_config import (NORMAL_CONFIG_6_PLAYER,
-                                    NORMAL_CONFIG_9_PLAYER, GameConfig)
+from game_logic.game_config import (
+    NORMAL_CONFIG_6_PLAYER,
+    NORMAL_CONFIG_9_PLAYER,
+    GameConfig,
+)
 from game_logic.player import Character
 
 
