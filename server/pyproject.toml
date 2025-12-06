@@ -17,4 +17,5 @@ include = ["agent_server*", "game_controller*", "game_logic*"]
 dev = [
     "pytest>=7.0",
     "pytest-cov>=4.0",  # coverage report
+    "pytest-asyncio",   # async test support
 ]
