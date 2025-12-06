@@ -1,14 +1,20 @@
-import pytest
-from game_logic.game_config import GameConfig, NORMAL_CONFIG_6_PLAYER, NORMAL_CONFIG_9_PLAYER
+"""Tests for game configuration."""
+
+from game_logic.game_config import (
+    NORMAL_CONFIG_6_PLAYER,
+    NORMAL_CONFIG_9_PLAYER,
+    GameConfig,
+)
 from game_logic.player import Character
 
 
 class TestGameConfig:
+    """Test cases for GameConfig class."""
+
     def test_game_config_initialization(self):
         """Test GameConfig dataclass initialization."""
         config = GameConfig(
-            player_number=6,
-            character_count={Character.VILLAGER: 2}
+            player_number=6, character_count={Character.VILLAGER: 2}
         )
         assert config.player_number == 6
         assert config.character_count == {Character.VILLAGER: 2}

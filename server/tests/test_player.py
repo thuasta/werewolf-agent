@@ -1,8 +1,11 @@
-import pytest
+"""Tests for Player class and Character enum."""
+
 from game_logic.player import Player, Character
 
 
 class TestPlayer:
+    """Test cases for Player class."""
+
     def test_player_initialization(self):
         """Test that Player can be instantiated."""
         player = Player()

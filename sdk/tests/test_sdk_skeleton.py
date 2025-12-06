@@ -1,4 +1,4 @@
-import pytest
+"""Placeholder tests for SDK."""
 
 
 def test_sdk_placeholder():
