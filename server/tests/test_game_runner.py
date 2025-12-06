@@ -8,15 +8,14 @@ class TestGameRunner:
     """Test cases for GameRunner."""
 
     @pytest.mark.asyncio
-    @pytest.mark.xfail(reason="Not implemented yet")
+    @pytest.mark.xfail(strict=True, reason="Not implemented yet")
     async def test_start(self):
         """Test that start method runs the game loop."""
         runner = GameRunner()
-        # We expect it to run without error
         await runner.start()
 
     @pytest.mark.asyncio
-    @pytest.mark.xfail(reason="Not implemented yet")
+    @pytest.mark.xfail(strict=True, reason="Not implemented yet")
     async def test_on_message(self):
         """Test message handling."""
         runner = GameRunner()
