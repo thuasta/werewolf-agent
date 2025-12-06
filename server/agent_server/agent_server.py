@@ -8,3 +8,7 @@ class AgentServer:
 
     def __init__(self) -> None:
         pass
+
+    async def start(self) -> None:
+        """Start the agent server."""
+        raise NotImplementedError

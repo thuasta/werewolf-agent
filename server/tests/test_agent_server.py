@@ -16,4 +16,4 @@ class TestAgentServer:
     async def test_start(self):
         """Test server start."""
         server = AgentServer()
-        await server.start()  # pylint: disable=no-member
+        await server.start()
