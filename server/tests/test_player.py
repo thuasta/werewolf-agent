@@ -1,6 +1,6 @@
 """Tests for Player class and Character enum."""
 
-from game_logic.player import Player, Character
+from game_logic.player import Character, Player
 
 
 class TestPlayer:
