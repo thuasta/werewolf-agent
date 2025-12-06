@@ -1,0 +1,29 @@
+[MASTER]
+# Use multiple processes to speed up Pylint
+jobs=0
+
+[FORMAT]
+# Maximum number of characters on a single line
+max-line-length=88
+
+[MESSAGES CONTROL]
+# Disable some warnings that are not relevant for this project
+disable=
+    missing-module-docstring,
+    missing-class-docstring,
+    missing-function-docstring,
+    too-few-public-methods,
+    protected-access,
+    import-error,  # We handle this with proper PYTHONPATH setup
+
+[REPORTS]
+# Set the output format
+output-format=colorized
+
+[BASIC]
+# Naming conventions
+good-names=i,j,k,ex,Run,_,id
+
+[TYPECHECK]
+# Since we're using pytest, we need to tell pylint about it
+ignored-modules=pytest
