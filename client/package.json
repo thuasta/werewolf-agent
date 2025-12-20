@@ -9,7 +9,7 @@
         "lint": "eslint \"src/**/*.{ts,tsx,js,jsx}\"",
         "lint:fix": "eslint \"src/**/*.{ts,tsx,js,jsx}\" --fix",
         "lint:ci": "eslint \"src/**/*.{ts,tsx,js,jsx}\" --max-warnings=0",
-        "prettier": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,md}\"",
+        "prettier": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,md}\" \"*.{js,json}\"",
         "preview": "vite preview"
     },
     "dependencies": {
@@ -30,6 +30,7 @@
         "eslint-plugin-react": "^7.37.5",
         "eslint-plugin-react-hooks": "^7.0.1",
         "eslint-plugin-react-refresh": "^0.4.26",
+        "eslint-plugin-unused-imports": "^4.3.0",
         "prettier": "^3.7.4",
         "typescript-eslint": "^8.50.0",
         "typescript": "^5.9.3",

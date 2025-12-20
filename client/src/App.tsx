@@ -12,15 +12,18 @@
   与比赛规则关联：Arena 中展示的 `day/phase/timeLeft`、玩家状态（role, isAlive）和日志，可以直接映射到竞赛中的 `game_state` 与 `decision` 协议。
 */
 
+import { Activity, Play, Film, Eye, Cpu, Users } from 'lucide-react';
 import React, { useState, useEffect } from 'react';
 import { HashRouter, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
-import { Activity, Play, Film, Eye, Cpu, Users } from 'lucide-react';
-import { startGameLoop, subscribeToGame, sendHumanAction, getInitialState, resetGame } from './services/mockGameEngine';
-import type { GameState, AgentDecision } from '../src/types';
-import PlayerCard from './components/PlayerCard';
-import GameLog from './components/GameLog';
+
 import ActionPanel from './components/ActionPanel';
+import GameLog from './components/GameLog';
+import PlayerCard from './components/PlayerCard';
 import StatsChart from './components/StatsChart';
+import { startGameLoop, subscribeToGame, sendHumanAction, getInitialState, resetGame } from './services/mockGameEngine';
+
+import type { GameState } from '../src/types';
+
 
 // --- Layout Component ---
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {

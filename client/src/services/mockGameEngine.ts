@@ -10,7 +10,7 @@
       * 接收人类操作接口 `sendHumanAction`（当前仅记录日志并打印）。
 */
 
-import { GameState, Phase, Role, LogEntry, Player, AgentDecision } from '../types';
+import { type GameState, Phase, Role, type LogEntry, type Player, type AgentDecision } from '../types';
 
 // Helper to generate initial players
 const generatePlayers = (): Player[] => {

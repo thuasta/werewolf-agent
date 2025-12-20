@@ -9,7 +9,8 @@
 
 import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts';
-import { Player } from '../types';
+
+import { type Player } from '../types';
 
 interface StatsChartProps {
     players: Player[];

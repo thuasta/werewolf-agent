@@ -9,9 +9,10 @@
     - 注意：真实竞赛应将 `AgentDecision` POST 到后端 AI 服务并由后端进行验证/计分。
 */
 
+import { Send, Microscope } from 'lucide-react';
 import React, { useState } from 'react';
-import { AgentDecision, GameState, Phase } from '../types';
-import { Send, Target, Microscope } from 'lucide-react';
+
+import { type AgentDecision, type GameState, Phase } from '../types';
 
 interface ActionPanelProps {
     gameState: GameState;
