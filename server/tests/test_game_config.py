@@ -13,7 +13,9 @@ class TestGameConfig:
 
     def test_game_config_initialization(self):
         """Test GameConfig dataclass initialization."""
-        config = GameConfig(player_number=6, character_count={Role.VILLAGER: 2})
+        config = GameConfig(
+            player_number=6, character_count={Role.VILLAGER: 2}
+        )
         assert config.player_number == 6
         assert config.character_count == {Role.VILLAGER: 2}
 

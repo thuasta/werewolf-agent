@@ -6,7 +6,7 @@ Platform for the 1st Agent Development Competition, themed around the game Werew
 
 This platform consists of several components:
 
-- Unity Client (`client`)
+- TypeScript Client powered by React (`client`)
 - Python SDK (`sdk`)
 - Game Server (`server`)
 

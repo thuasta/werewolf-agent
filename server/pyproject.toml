@@ -19,3 +19,6 @@ dev = [
     "pytest-cov>=4.0",  # coverage report
     "pytest-asyncio",   # async test support
 ]
+
+[tool.black]
+line-length = 79

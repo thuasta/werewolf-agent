@@ -210,3 +210,7 @@ __marimo__/
 .vscode/
 
 .DS_Store
+
+# TypeScript Cache
+*.js
+node_modules/

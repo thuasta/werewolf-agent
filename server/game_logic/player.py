@@ -1,6 +1,7 @@
 from enum import Enum
 from typing import Any
 
+
 class Role(Enum):
     """The character enum"""
 
@@ -10,6 +11,15 @@ class Role(Enum):
     WEREWOLF = "werewolf"
     PROPHET = "prophet"
     GUARD = "guard"
+
+
+class DeathReason(Enum):
+    """Possible death reasons"""
+
+    WEREWOLF_KILLED = "werewolf_killed"
+    WITCH_POISON = "witch_poison"
+    VOTED = "voted"
+    HUNTER_SHOT = "hunter_shot"
 
 
 # pylint: disable=too-many-instance-attributes
@@ -31,14 +41,16 @@ class Player:
         self.vote_correct_counts: int = 0
         self.mistake_counts: int = 0
 
-    # TODO: add enum for death reason
-    def die(self, method: str) -> None:
+    def die(self, method: DeathReason) -> None:
         """
         Set the player's state to death
         """
         self.is_alive = False
-        if self.role == Role.HUNTER and method == "poison":
+        if self.role == Role.HUNTER and method == DeathReason.WITCH_POISON:
             self.can_shoot = False
 
     def __repr__(self) -> str:
-        return f"Player(id={self.id}, role={self.role.value}, Alive={self.is_alive})"
+        return (
+            f"Player(id={self.id}, role={self.role.value}, "
+            f"Alive={self.is_alive})"
+        )
