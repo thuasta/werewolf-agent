@@ -5,3 +5,17 @@ description = "The server for werewolf agent game."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["agent_server*", "game_controller*", "game_logic*"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",  # coverage report
+    "pytest-asyncio",   # async test support
+]
