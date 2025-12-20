@@ -7,9 +7,10 @@
     - 日志项应包含 `phase` 与 `timestamp`，便于在 UI 上呈现阶段与时间戳。
 */
 
-import React, { useEffect, useRef } from 'react';
-import { LogEntry, Phase } from '../types';
 import { Terminal, MessageSquare, Zap, AlertTriangle } from 'lucide-react';
+import React, { useEffect, useRef } from 'react';
+
+import { type LogEntry } from '../types';
 
 interface GameLogProps {
     logs: LogEntry[];

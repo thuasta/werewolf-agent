@@ -12,9 +12,10 @@
     - `player.isAlive` 决定视觉风格（灰化/去饱和）。
 */
 
+import { Skull, Crown } from 'lucide-react';
 import React from 'react';
-import { Player, Role } from '../types';
-import { Shield, Skull, Zap, Crown } from 'lucide-react';
+
+import { type Player, Role } from '../types';
 
 interface PlayerCardProps {
     player: Player;

@@ -213,4 +213,5 @@ __marimo__/
 
 # TypeScript Cache
 *.js
+!client/eslint.config.js
 node_modules/
